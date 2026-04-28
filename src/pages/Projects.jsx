@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import project1Img from '../assets/project1.png'
+import project2Img from '../assets/project2.png'
 import project3Img from '../assets/project3.png'
 
 const projects = [
@@ -7,7 +8,7 @@ const projects = [
     id: 1,
     title: 'Recipe Box',
     description: 'A personal recipe manager to save, organize, and rate your favorite recipes. Each account has its own private collection that syncs across devices.',
-    techStack: ['React', 'Firebase', 'CSS Modules'],
+    techStack: ['React (Vite)', 'Firebase', 'Claude'],
     retrospective: 'Building real-time sync with Firebase taught me a lot about state management. Next time I would add optimistic UI updates earlier to improve perceived performance.',
     demo: 'https://julias-recipe-box.netlify.app/',
     repo: 'https://github.com/jooweeah/Recipe-Box',
@@ -15,19 +16,20 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Project Two',
-    description: 'A short description of what this project does.',
-    techStack: ['React', 'Node.js', 'MongoDB'],
-    retrospective: 'Add your retrospective here — what you learned, what you would do differently.',
-    demo: '#',
-    repo: '#',
+    title: 'Habit Tracker',
+    description: 'A minimal web app for building and maintaining daily habits. Track your streaks, visualize completion history on a calendar grid, and stay consistent.',
+    techStack: ['React (Vite)', 'Claude'],
+    retrospective: 'This was my first time building a website with a calendar component. In retrospect, I would have been more specific with my initial design and added more features like habit categories and reminders.',
+    demo: 'https://julias-habit-tracker.netlify.app/',
+    repo: 'https://github.com/jooweeah/habit-tracker',
+    image: project2Img,
   },
   {
     id: 3,
     title: 'Luxe Locks',
     description: 'A static site representing a premium hair salon and wig boutique.',
-    techStack: ['React', 'HTML', 'CSS'],
-    retrospective: 'This was my first website working with Claude. I learned a lot about how to give better prompts to get more polished results. In retrospect, I would have spent more time on the design phase and removed placeholder images.',
+    techStack: ['React', 'HTML', 'CSS', 'Claude'],
+    retrospective: 'This was my first website working with Claude. I learned a lot about how to give better prompts to get more polished results. In retrospect, I would have spent more time on the design phase and removed excessive placeholder images.',
     demo: 'https://luxelocksstaticsite.netlify.app/',
     repo: 'https://github.com/jooweeah/luxe-locks',
     image: project3Img,
