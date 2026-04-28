@@ -1,0 +1,112 @@
+:root {
+  --color-primary: #E8A0BF;
+  --color-primary-hover: #d4739f;
+  --color-accent: #FFD6E0;
+  --color-dark: #2D2D2D;
+  --color-bg: #ffffff;
+  --color-bg-soft: #FFF5F8;
+  --color-border: #F2C4D8;
+  --color-muted: #9e8a91;
+
+  --font-sans: 'Segoe UI', system-ui, Roboto, sans-serif;
+
+  --shadow-sm: 0 2px 8px rgba(232, 160, 191, 0.15);
+  --shadow-md: 0 4px 20px rgba(232, 160, 191, 0.25);
+
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-dark);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-dark);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-dark);
+  font-weight: 600;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+/* Bootstrap overrides */
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+  color: #fff;
+}
+
+.btn-outline-primary {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.nav-cherry {
+  color: var(--color-dark);
+  transition: color 0.15s ease;
+}
+.nav-cherry:hover,
+.nav-cherry--active {
+  color: var(--color-primary);
+}
+.nav-cherry--active {
+  font-weight: 600;
+}
+
+.footer-icon {
+  color: var(--color-muted);
+  transition: color 0.15s ease;
+}
+.footer-icon:hover {
+  color: var(--color-primary);
+}
+
+.contact-card {
+  background-color: var(--color-bg-soft);
+  color: var(--color-dark);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.contact-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  color: var(--color-dark);
+}
