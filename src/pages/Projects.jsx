@@ -8,7 +8,7 @@ const projects = [
     id: 1,
     title: 'Recipe Box',
     description: 'A personal recipe manager to save, organize, and rate your favorite recipes. Each account has its own private collection that syncs across devices.',
-    techStack: ['React (Vite)', 'Firebase', 'Firestore', 'Claude'],
+    techStack: ['React (Vite)', 'Firebase', 'Claude'],
     retrospective: 'Building this project was a great learning experience in full-stack development. I got to work with user authentication, database management, and responsive design. In retrospect, I would have added increased contrast earlier in the design process and fixed the low-quality image headers.',
     demo: 'https://julias-recipe-box.netlify.app/',
     repo: 'https://github.com/jooweeah/Recipe-Box',
